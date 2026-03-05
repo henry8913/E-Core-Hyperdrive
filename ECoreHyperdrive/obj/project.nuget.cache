@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "TRc4LdUGG+k=",
+  "success": true,
+  "projectFilePath": "/Users/henry/Documents/GitHub/E-Core Hyperdrive/ECoreHyperdrive/ECoreHyperdrive.csproj",
+  "expectedPackageFiles": [
+    "/Users/henry/.nuget/packages/microsoft.aspnetcore.app.internal.assets/10.0.3/microsoft.aspnetcore.app.internal.assets.10.0.3.nupkg.sha512",
+    "/Users/henry/.nuget/packages/microsoft.aspnetcore.components.webassembly/10.0.3/microsoft.aspnetcore.components.webassembly.10.0.3.nupkg.sha512",
+    "/Users/henry/.nuget/packages/microsoft.aspnetcore.components.webassembly.server/10.0.3/microsoft.aspnetcore.components.webassembly.server.10.0.3.nupkg.sha512",
+    "/Users/henry/.nuget/packages/microsoft.dotnet.hotreload.webassembly.browser/10.0.103/microsoft.dotnet.hotreload.webassembly.browser.10.0.103.nupkg.sha512",
+    "/Users/henry/.nuget/packages/microsoft.jsinterop.webassembly/10.0.3/microsoft.jsinterop.webassembly.10.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

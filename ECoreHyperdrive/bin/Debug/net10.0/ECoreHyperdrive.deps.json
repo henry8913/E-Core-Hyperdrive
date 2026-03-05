@@ -1,0 +1,110 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v10.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v10.0": {
+      "ECoreHyperdrive/1.0.0": {
+        "dependencies": {
+          "ECoreHyperdrive.Client": "1.0.0",
+          "Microsoft.AspNetCore.Components.WebAssembly.Server": "10.0.3"
+        },
+        "runtime": {
+          "ECoreHyperdrive.dll": {}
+        }
+      },
+      "Microsoft.AspNetCore.Components.WebAssembly/10.0.3": {
+        "dependencies": {
+          "Microsoft.JSInterop.WebAssembly": "10.0.3"
+        },
+        "runtime": {
+          "lib/net10.0/Microsoft.AspNetCore.Components.WebAssembly.dll": {
+            "assemblyVersion": "10.0.3.0",
+            "fileVersion": "10.0.326.7603"
+          }
+        }
+      },
+      "Microsoft.AspNetCore.Components.WebAssembly.Server/10.0.3": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Components.WebAssembly": "10.0.3"
+        },
+        "runtime": {
+          "lib/net10.0/Microsoft.AspNetCore.Components.WebAssembly.Server.dll": {
+            "assemblyVersion": "10.0.3.0",
+            "fileVersion": "10.0.326.7603"
+          }
+        }
+      },
+      "Microsoft.DotNet.HotReload.WebAssembly.Browser/10.0.103": {
+        "runtime": {
+          "lib/net10.0/Microsoft.DotNet.HotReload.WebAssembly.Browser.dll": {
+            "assemblyVersion": "10.0.103.0",
+            "fileVersion": "10.1.326.7603"
+          }
+        }
+      },
+      "Microsoft.JSInterop.WebAssembly/10.0.3": {
+        "runtime": {
+          "lib/net10.0/Microsoft.JSInterop.WebAssembly.dll": {
+            "assemblyVersion": "10.0.3.0",
+            "fileVersion": "10.0.326.7603"
+          }
+        }
+      },
+      "ECoreHyperdrive.Client/1.0.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Components.WebAssembly": "10.0.3",
+          "Microsoft.DotNet.HotReload.WebAssembly.Browser": "10.0.103"
+        },
+        "runtime": {
+          "ECoreHyperdrive.Client.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ECoreHyperdrive/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.AspNetCore.Components.WebAssembly/10.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-JZqlz8Swc6MYa+Zq52HcCYmgliy6wulJh9Oesv5eghnPFGLAPvVWTBEuTwdx90PKVj2exOY6XAnKpkwFPXvqwg==",
+      "path": "microsoft.aspnetcore.components.webassembly/10.0.3",
+      "hashPath": "microsoft.aspnetcore.components.webassembly.10.0.3.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.Components.WebAssembly.Server/10.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-LPfE2dIfSV+mY3BuRSHim197M0AufG84u/qaFy1s0A/MXqr6kyU/w928wSiEILVRqsQS9TdAFWlo0lDbl/slxg==",
+      "path": "microsoft.aspnetcore.components.webassembly.server/10.0.3",
+      "hashPath": "microsoft.aspnetcore.components.webassembly.server.10.0.3.nupkg.sha512"
+    },
+    "Microsoft.DotNet.HotReload.WebAssembly.Browser/10.0.103": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-tIq6T4oyBMjxxxllslJu2fOJqEj8SOW29IfWqHYxubreOVlFWnxPN2PjDMuwoHjkrOnPKyuqoNcVYh5YOZcs0Q==",
+      "path": "microsoft.dotnet.hotreload.webassembly.browser/10.0.103",
+      "hashPath": "microsoft.dotnet.hotreload.webassembly.browser.10.0.103.nupkg.sha512"
+    },
+    "Microsoft.JSInterop.WebAssembly/10.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-/8RPiR0Aht+FSreYfoKNijr/m5RVMUPRti1zYt/slR6lz7j6hAjzeVar43MOby4euxXQc/16BZvG4GyVSkGonw==",
+      "path": "microsoft.jsinterop.webassembly/10.0.3",
+      "hashPath": "microsoft.jsinterop.webassembly.10.0.3.nupkg.sha512"
+    },
+    "ECoreHyperdrive.Client/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
