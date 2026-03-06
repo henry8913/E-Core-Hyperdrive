@@ -165,7 +165,6 @@
 /Users/henry/Documents/GitHub/E-Core Hyperdrive/ECoreHyperdrive/obj/Debug/net10.0/scopedcss/bundle/ECoreHyperdrive.styles.css
 /Users/henry/Documents/GitHub/E-Core Hyperdrive/ECoreHyperdrive/obj/Debug/net10.0/scopedcss/projectbundle/ECoreHyperdrive.bundle.scp.css
 /Users/henry/Documents/GitHub/E-Core Hyperdrive/ECoreHyperdrive/obj/Debug/net10.0/compressed/f9o902iofb-{0}-99zm1jdh75-99zm1jdh75.gz
-/Users/henry/Documents/GitHub/E-Core Hyperdrive/ECoreHyperdrive/obj/Debug/net10.0/compressed/9hv3875uem-{0}-w7mf952350-w7mf952350.gz
 /Users/henry/Documents/GitHub/E-Core Hyperdrive/ECoreHyperdrive/obj/Debug/net10.0/compressed/ph6zq19r8u-{0}-bqjiyaj88i-bqjiyaj88i.gz
 /Users/henry/Documents/GitHub/E-Core Hyperdrive/ECoreHyperdrive/obj/Debug/net10.0/compressed/nuertzmjts-{0}-c2jlpeoesf-c2jlpeoesf.gz
 /Users/henry/Documents/GitHub/E-Core Hyperdrive/ECoreHyperdrive/obj/Debug/net10.0/compressed/ximugtm9xl-{0}-erw9l3u2r3-erw9l3u2r3.gz
@@ -342,5 +341,8 @@
 /Users/henry/Documents/GitHub/E-Core Hyperdrive/ECoreHyperdrive/bin/Debug/net10.0/runtimes/win-arm64/native/e_sqlite3.dll
 /Users/henry/Documents/GitHub/E-Core Hyperdrive/ECoreHyperdrive/bin/Debug/net10.0/runtimes/win-x64/native/e_sqlite3.dll
 /Users/henry/Documents/GitHub/E-Core Hyperdrive/ECoreHyperdrive/bin/Debug/net10.0/runtimes/win-x86/native/e_sqlite3.dll
-/Users/henry/Documents/GitHub/E-Core Hyperdrive/ECoreHyperdrive/obj/Debug/net10.0/compressed/gbhhbr80py-{0}-t3rql0htbl-t3rql0htbl.gz
-/Users/henry/Documents/GitHub/E-Core Hyperdrive/ECoreHyperdrive/obj/Debug/net10.0/compressed/s67791d6nl-{0}-t3rql0htbl-t3rql0htbl.gz
+/Users/henry/Documents/GitHub/E-Core Hyperdrive/ECoreHyperdrive/obj/Debug/net10.0/scopedcss/Components/Pages/Admin.razor.rz.scp.css
+/Users/henry/Documents/GitHub/E-Core Hyperdrive/ECoreHyperdrive/obj/Debug/net10.0/scopedcss/Components/Pages/About.razor.rz.scp.css
+/Users/henry/Documents/GitHub/E-Core Hyperdrive/ECoreHyperdrive/obj/Debug/net10.0/compressed/9hv3875uem-{0}-a86zhlb11u-a86zhlb11u.gz
+/Users/henry/Documents/GitHub/E-Core Hyperdrive/ECoreHyperdrive/obj/Debug/net10.0/compressed/gbhhbr80py-{0}-boztkntsg3-boztkntsg3.gz
+/Users/henry/Documents/GitHub/E-Core Hyperdrive/ECoreHyperdrive/obj/Debug/net10.0/compressed/s67791d6nl-{0}-boztkntsg3-boztkntsg3.gz

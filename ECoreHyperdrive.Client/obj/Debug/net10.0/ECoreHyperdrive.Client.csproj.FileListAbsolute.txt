@@ -2140,10 +2140,10 @@
 /Users/henry/Documents/GitHub/E-Core Hyperdrive/ECoreHyperdrive.Client/obj/Debug/net10.0/ECoreHyperdrive.Client.pdb
 /Users/henry/Documents/GitHub/E-Core Hyperdrive/ECoreHyperdrive.Client/obj/Debug/net10.0/ref/ECoreHyperdrive.Client.dll
 /Users/henry/Documents/GitHub/E-Core Hyperdrive/ECoreHyperdrive.Client/obj/Debug/net10.0/ECoreHyperdrive.Client.sourcelink.json
-/Users/henry/Documents/GitHub/E-Core Hyperdrive/ECoreHyperdrive.Client/bin/Debug/net10.0/wwwroot/_framework/ECoreHyperdrive.Client.nxwm2gnkkc.wasm
-/Users/henry/Documents/GitHub/E-Core Hyperdrive/ECoreHyperdrive.Client/bin/Debug/net10.0/wwwroot/_framework/ECoreHyperdrive.Client.p6myroqgkn.pdb
-/Users/henry/Documents/GitHub/E-Core Hyperdrive/ECoreHyperdrive.Client/bin/Debug/net10.0/wwwroot/_framework/ECoreHyperdrive.Client.nxwm2gnkkc.wasm.gz
-/Users/henry/Documents/GitHub/E-Core Hyperdrive/ECoreHyperdrive.Client/bin/Debug/net10.0/wwwroot/_framework/ECoreHyperdrive.Client.p6myroqgkn.pdb.gz
-/Users/henry/Documents/GitHub/E-Core Hyperdrive/ECoreHyperdrive.Client/obj/Debug/net10.0/compressed/olzyajfh3d-{0}-nxwm2gnkkc-nxwm2gnkkc.gz
-/Users/henry/Documents/GitHub/E-Core Hyperdrive/ECoreHyperdrive.Client/obj/Debug/net10.0/compressed/ymf8o447s2-{0}-p6myroqgkn-p6myroqgkn.gz
-/Users/henry/Documents/GitHub/E-Core Hyperdrive/ECoreHyperdrive.Client/obj/Debug/net10.0/compressed/nx4bzws5xn-{0}-t7m5sgrzyc-t7m5sgrzyc.gz
+/Users/henry/Documents/GitHub/E-Core Hyperdrive/ECoreHyperdrive.Client/bin/Debug/net10.0/wwwroot/_framework/ECoreHyperdrive.Client.efrtmvypp1.wasm
+/Users/henry/Documents/GitHub/E-Core Hyperdrive/ECoreHyperdrive.Client/bin/Debug/net10.0/wwwroot/_framework/ECoreHyperdrive.Client.wnfxoe3el2.pdb
+/Users/henry/Documents/GitHub/E-Core Hyperdrive/ECoreHyperdrive.Client/bin/Debug/net10.0/wwwroot/_framework/ECoreHyperdrive.Client.efrtmvypp1.wasm.gz
+/Users/henry/Documents/GitHub/E-Core Hyperdrive/ECoreHyperdrive.Client/bin/Debug/net10.0/wwwroot/_framework/ECoreHyperdrive.Client.wnfxoe3el2.pdb.gz
+/Users/henry/Documents/GitHub/E-Core Hyperdrive/ECoreHyperdrive.Client/obj/Debug/net10.0/compressed/olzyajfh3d-{0}-efrtmvypp1-efrtmvypp1.gz
+/Users/henry/Documents/GitHub/E-Core Hyperdrive/ECoreHyperdrive.Client/obj/Debug/net10.0/compressed/ymf8o447s2-{0}-wnfxoe3el2-wnfxoe3el2.gz
+/Users/henry/Documents/GitHub/E-Core Hyperdrive/ECoreHyperdrive.Client/obj/Debug/net10.0/compressed/nx4bzws5xn-{0}-91tl0er2q2-91tl0er2q2.gz

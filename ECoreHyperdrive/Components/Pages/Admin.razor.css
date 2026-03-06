@@ -1,0 +1,113 @@
+.admin-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    color: white;
+}
+
+.form-card {
+    background: #1a1a1a;
+    padding: 30px;
+    border-radius: 20px;
+    border: 1px solid #00ff95;
+    box-shadow: 0 0 20px rgba(0, 255, 149, 0.1);
+}
+
+.form-group { margin-bottom: 15px; }
+label { display: block; margin-bottom: 5px; color: #00ff95; font-size: 0.9rem; }
+
+.form-control {
+    width: 100%;
+    background: #0b0b0b;
+    border: 1px solid #333;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.btn-save {
+    background: #00ff95;
+    color: black;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-save:hover { background: #00cc77; transform: scale(1.02); }
+
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    color: white;
+}
+
+.admin-table th, .admin-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #333;
+}
+
+.btn-delete {
+    background: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 5px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.8rem;
+}
+
+.btn-delete:hover { background: #cc0000; }
+
+.btn-edit {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.8rem;
+}
+
+.btn-edit:hover { background: #0056b3; }
+
+.btn-cancel {
+    background: #6c757d;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-cancel:hover { background: #5a6268; transform: scale(1.02); }
+
+.alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+}
+
+.alert-success {
+    color: #00ff95;
+    background-color: rgba(0, 255, 149, 0.1);
+    border-color: #00ff95;
+}
+
+.alert-danger {
+    color: #ff4d4d;
+    background-color: rgba(255, 77, 77, 0.1);
+    border-color: #ff4d4d;
+}
+
+.mb-5 { margin-bottom: 3rem; }
+.ms-2 { margin-left: 0.5rem; }
+.me-2 { margin-right: 0.5rem; }
+.mt-4 { margin-top: 1.5rem; }

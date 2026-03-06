@@ -66,6 +66,14 @@ build_metadata.AdditionalFiles.CssScope = b-s3okpjng84
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9MYXlvdXQvUmVjb25uZWN0TW9kYWwucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-so2aynr0j9
 
+[/Users/henry/Documents/GitHub/E-Core Hyperdrive/ECoreHyperdrive/Components/Pages/About.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9BYm91dC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-45m2vkrorp
+
+[/Users/henry/Documents/GitHub/E-Core Hyperdrive/ECoreHyperdrive/Components/Pages/Admin.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9BZG1pbi5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-0ghg88gp68
+
 [/Users/henry/Documents/GitHub/E-Core Hyperdrive/ECoreHyperdrive/Components/Pages/Home.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9Ib21lLnJhem9y
 build_metadata.AdditionalFiles.CssScope = b-mhfiylbxcp

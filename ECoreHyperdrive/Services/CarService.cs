@@ -4,18 +4,38 @@ using Microsoft.EntityFrameworkCore;
 
 namespace ECoreHyperdrive.Services;
 
-public class CarService(AppDbContext context)
+public class CarService(IDbContextFactory<AppDbContext> factory)
 {
-    private readonly AppDbContext _context = context;
+    private readonly IDbContextFactory<AppDbContext> _factory = factory;
 
     public async Task<List<Supercar>> GetInventoryAsync()
     {
-        return await _context.Supercars.ToListAsync();
+        using var context = await _factory.CreateDbContextAsync();
+        return await context.Supercars.AsNoTracking().ToListAsync();
     }
 
     public async Task AddCarAsync(Supercar car)
     {
-        _context.Supercars.Add(car);
-        await _context.SaveChangesAsync();
+        using var context = await _factory.CreateDbContextAsync();
+        context.Supercars.Add(car);
+        await context.SaveChangesAsync();
+    }
+
+    public async Task DeleteCarAsync(int id)
+    {
+        using var context = await _factory.CreateDbContextAsync();
+        var car = await context.Supercars.FindAsync(id);
+        if (car != null)
+        {
+            context.Supercars.Remove(car);
+            await context.SaveChangesAsync();
+        }
+    }
+
+    public async Task UpdateCarAsync(Supercar car)
+    {
+        using var context = await _factory.CreateDbContextAsync();
+        context.Supercars.Update(car);
+        await context.SaveChangesAsync();
     }
 }
