@@ -343,6 +343,6 @@
 /Users/henry/Documents/GitHub/E-Core Hyperdrive/ECoreHyperdrive/bin/Debug/net10.0/runtimes/win-x86/native/e_sqlite3.dll
 /Users/henry/Documents/GitHub/E-Core Hyperdrive/ECoreHyperdrive/obj/Debug/net10.0/scopedcss/Components/Pages/Admin.razor.rz.scp.css
 /Users/henry/Documents/GitHub/E-Core Hyperdrive/ECoreHyperdrive/obj/Debug/net10.0/scopedcss/Components/Pages/About.razor.rz.scp.css
-/Users/henry/Documents/GitHub/E-Core Hyperdrive/ECoreHyperdrive/obj/Debug/net10.0/compressed/9hv3875uem-{0}-cndsjy182r-cndsjy182r.gz
-/Users/henry/Documents/GitHub/E-Core Hyperdrive/ECoreHyperdrive/obj/Debug/net10.0/compressed/gbhhbr80py-{0}-61a25xbcs2-61a25xbcs2.gz
-/Users/henry/Documents/GitHub/E-Core Hyperdrive/ECoreHyperdrive/obj/Debug/net10.0/compressed/s67791d6nl-{0}-61a25xbcs2-61a25xbcs2.gz
+/Users/henry/Documents/GitHub/E-Core Hyperdrive/ECoreHyperdrive/obj/Debug/net10.0/compressed/9hv3875uem-{0}-30uo45at7t-30uo45at7t.gz
+/Users/henry/Documents/GitHub/E-Core Hyperdrive/ECoreHyperdrive/obj/Debug/net10.0/compressed/gbhhbr80py-{0}-06edv0hv0z-06edv0hv0z.gz
+/Users/henry/Documents/GitHub/E-Core Hyperdrive/ECoreHyperdrive/obj/Debug/net10.0/compressed/s67791d6nl-{0}-06edv0hv0z-06edv0hv0z.gz
