@@ -11,15 +11,39 @@
     <div class="divider"></div>
 </div>
 
-<div class="inventory-grid">
-    @foreach (var car in CarSrv.GetInventory())
+@if (inventory == null)
+{
+    <p style="text-align:center; color: white;">Caricamento dei sistemi di bordo...</p>
+}
+else if (!inventory.Any())
+{
+    <div style="text-align:center; color: #aaa; padding: 40px;">
+        <p>Lo showroom è attualmente vuoto. I tecnici stanno preparando i nuovi modelli.</p>
+    </div>
+}
+else
+{
+    <div class="inventory-grid">
+        @foreach (var car in inventory)
+        {
+            <div class="car-card">
+                <img src="@car.ImageUrl" alt="@car.Model" />
+                <h3>@car.Brand @car.Model</h3>
+                <p class="stats">
+                    0-100: <strong>@car.ZeroToHundred s</strong> | 
+                    Range: <strong>@car.RangeKm km</strong>
+                </p>
+                <p class="price">@car.Price.ToString("N0") €</p>
+                <button class="btn-buy">Dettagli</button>
+            </div>
+        }
+    </div>
+}
+
+@code {
+    private List<Supercar>? inventory;
+    protected override async Task OnInitializedAsync()
     {
-        <div class="car-card">
-            <img src="@car.ImageUrl" alt="@car.Model" />
-            <h3>@car.Model</h3>
-            <p class="stats">0-100: <strong>@car.ZeroToHundred s</strong> | Range: <strong>@car.RangeKm km</strong></p>
-            <p class="price">@car.Price.ToString("N0") €</p>
-            <button class="btn-buy">Dettagli</button>
-        </div>
+        inventory = await CarSrv.GetInventoryAsync();
     }
-</div>
+}
