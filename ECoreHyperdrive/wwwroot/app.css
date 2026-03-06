@@ -47,7 +47,7 @@ a:hover {
 }
 
 .content {
-    padding-top: 80px; /* Space for fixed header */
+    padding-top: 0;
 }
 
 /* Custom Scrollbar */
