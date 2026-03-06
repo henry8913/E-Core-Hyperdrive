@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ECoreHyperdrive.Client")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+43a340c321f99c99002743a582f1674201f678cb")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a53dbe0cc0eebcc5edba457dc306ba7574228661")]
 [assembly: System.Reflection.AssemblyProductAttribute("ECoreHyperdrive.Client")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ECoreHyperdrive.Client")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

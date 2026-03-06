@@ -1,49 +1,133 @@
-﻿@page "/"
+@page "/"
 @using ECoreHyperdrive.Models
 @using ECoreHyperdrive.Services
 @inject CarService CarSrv
 
 <PageTitle>E-CORE HYPERDRIVE | Showroom</PageTitle>
 
-<div class="showroom-container">
-    <h1 class="brand-title">E-CORE HYPERDRIVE</h1>
-    <p class="motto">"Dove il silenzio incontra lo 0-100 senza precedenti."</p>
-    <div class="divider"></div>
+<div class="hero-section">
+    <div class="hero-content">
+        <h1 class="hero-title">BEYOND <span class="highlight">SPEED</span></h1>
+        <p class="hero-subtitle">L'ARTE DELL'INGEGNERIA INCONTRA LA POTENZA ELETTRICA.</p>
+        <a href="#showroom" class="btn-hero">ESPLORA LA COLLEZIONE</a>
+    </div>
+    <div class="scroll-indicator">
+        <span>SCROLL</span>
+        <div class="line"></div>
+    </div>
 </div>
 
-@if (inventory == null)
-{
-    <p style="text-align:center; color: white;">Caricamento dei sistemi di bordo...</p>
-}
-else if (!inventory.Any())
-{
-    <div style="text-align:center; color: #aaa; padding: 40px;">
-        <p>Lo showroom è attualmente vuoto. I tecnici stanno preparando i nuovi modelli.</p>
-    </div>
-}
-else
-{
-    <div class="inventory-grid">
-        @foreach (var car in inventory)
-        {
-            <div class="car-card">
-                <img src="@car.ImageUrl" alt="@car.Model" />
-                <h3>@car.Brand @car.Model</h3>
-                <p class="stats">
-                    0-100: <strong>@car.ZeroToHundred s</strong> | 
-                    Range: <strong>@car.RangeKm km</strong>
-                </p>
-                <p class="price">@car.Price.ToString("N0") €</p>
-                <button class="btn-buy">Dettagli</button>
+<div class="tech-section">
+    <div class="tech-overlay">
+        <div class="tech-content">
+            <h2>TECNOLOGIA <span class="highlight">CORE</span></h2>
+            <p>Il cuore pulsante di ogni Hyperdrive è il nostro sistema di propulsione proprietario. Batterie allo stato solido, motori a flusso assiale e un telaio in carbonio forgiato.</p>
+            <div class="tech-stats">
+                <div class="stat">
+                    <span class="val">98%</span>
+                    <span class="lbl">EFFICIENZA</span>
+                </div>
+                <div class="stat">
+                    <span class="val">1.2G</span>
+                    <span class="lbl">ACCELERAZIONE LATERALE</span>
+                </div>
+                <div class="stat">
+                    <span class="val">800V</span>
+                    <span class="lbl">ARCHITETTURA</span>
+                </div>
             </div>
-        }
+        </div>
     </div>
-}
+</div>
+
+<div id="showroom" class="showroom-section">
+    <div class="section-header">
+        <h2>LA COLLEZIONE</h2>
+        <div class="divider"></div>
+    </div>
+
+    @if (inventory == null)
+    {
+        <div class="loading-container">
+            <div class="spinner"></div>
+            <p>INIZIALIZZAZIONE SISTEMI...</p>
+        </div>
+    }
+    else if (!inventory.Any())
+    {
+        <div class="empty-state">
+            <p>SHOWROOM IN ALLESTIMENTO.</p>
+        </div>
+    }
+    else
+    {
+        <div class="inventory-grid">
+            @foreach (var car in inventory)
+            {
+                <div class="car-card">
+                    <div class="card-image-wrapper">
+                        <img src="@car.ImageUrl" alt="@car.Model" />
+                        <div class="card-overlay">
+                            <button class="btn-details">CONFIGURA</button>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h3 class="car-brand">@car.Brand</h3>
+                        <h2 class="car-model">@car.Model</h2>
+                        <div class="car-specs">
+                            <div class="spec-item">
+                                <span class="spec-label">0-100 KM/H</span>
+                                <span class="spec-value">@car.ZeroToHundred s</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">AUTONOMIA</span>
+                                <span class="spec-value">@car.RangeKm KM</span>
+                            </div>
+                        </div>
+                        <div class="car-price">
+                            <span>DA</span> @car.Price.ToString("N0") €
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    }
+</div>
+
+<div class="bespoke-section">
+    <div class="bespoke-content">
+        <h2>BESPOKE <span class="highlight">PROGRAM</span></h2>
+        <p>Non esistono due E-Core uguali. Il nostro programma di personalizzazione ti permette di creare un veicolo che è un'estensione della tua personalità.</p>
+        <button class="btn-hero">INIZIA IL VIAGGIO</button>
+    </div>
+</div>
+
+<div class="newsletter-section">
+    <h3>RICEVI AGGIORNAMENTI ESCLUSIVI</h3>
+    <p>Entra nel cerchio ristretto di E-Core Hyperdrive.</p>
+    <div class="newsletter-form">
+        <input type="email" placeholder="LA TUA EMAIL" />
+        <button>ISCRIVITI</button>
+    </div>
+</div>
+
+<footer class="site-footer">
+    <div class="footer-content">
+        <div class="footer-brand">E-CORE HYPERDRIVE</div>
+        <div class="footer-links">
+            <a href="#">PRIVACY</a>
+            <a href="#">CONTACT</a>
+            <a href="#">INSTAGRAM</a>
+        </div>
+        <div class="footer-copy">© 2026 E-CORE AUTOMOTIVE.</div>
+    </div>
+</footer>
 
 @code {
     private List<Supercar>? inventory;
     protected override async Task OnInitializedAsync()
     {
+        // Simulate a slight delay for dramatic effect if needed, or just load
         inventory = await CarSrv.GetInventoryAsync();
     }
 }
