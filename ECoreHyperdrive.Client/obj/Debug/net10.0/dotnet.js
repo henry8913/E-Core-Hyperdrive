@@ -5,7 +5,7 @@ var e=!1;const t=async()=>WebAssembly.validate(new Uint8Array([0,97,115,109,1,0,
   "mainAssemblyName": "ECoreHyperdrive.Client",
   "applicationEnvironment": "Development",
   "resources": {
-    "hash": "sha256-82PMwyhRnGCXO+jsphrF8KWpgVGsMbokEJsog/NAP0g=",
+    "hash": "sha256-PmNN5Prsi83aLSvZ7v/s+eC88MFysLhTYZoopssd01E=",
     "jsModuleNative": [
       {
         "name": "dotnet.native.69poregybn.js"
@@ -1242,16 +1242,16 @@ var e=!1;const t=async()=>WebAssembly.validate(new Uint8Array([0,97,115,109,1,0,
       },
       {
         "virtualPath": "ECoreHyperdrive.Client.wasm",
-        "name": "ECoreHyperdrive.Client.rm06l2jkzi.wasm",
-        "integrity": "sha256-TQq2jTcT3kq4OKQaMDb79dIVFgEowL+mpFvI5pevRc4=",
+        "name": "ECoreHyperdrive.Client.1yqxoo5ymq.wasm",
+        "integrity": "sha256-V7ETDckipnC7Un8sb/GeDWPUUA86Hu0nOoyLd/51xSQ=",
         "cache": "force-cache"
       }
     ],
     "pdb": [
       {
         "virtualPath": "ECoreHyperdrive.Client.pdb",
-        "name": "ECoreHyperdrive.Client.vksz4k33c1.pdb",
-        "integrity": "sha256-kUADPqvgS7TbbUK1WzAWiW6FEeWdkFKh0yLRMxPWE7Y=",
+        "name": "ECoreHyperdrive.Client.vtln5typbk.pdb",
+        "integrity": "sha256-Q+eE8B89lL5oOxQMpm7ckGXnbXKixhci2CIy3ti5Wqw=",
         "cache": "force-cache"
       }
     ],

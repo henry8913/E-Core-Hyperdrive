@@ -214,8 +214,6 @@
 /Users/henry/Documents/GitHub/E-Core Hyperdrive/ECoreHyperdrive/obj/Debug/net10.0/compressed/o0nrv8hogv-{0}-l81wce7d7i-l81wce7d7i.gz
 /Users/henry/Documents/GitHub/E-Core Hyperdrive/ECoreHyperdrive/obj/Debug/net10.0/compressed/6wb8ffmjbp-{0}-ax6tuj8tun-ax6tuj8tun.gz
 /Users/henry/Documents/GitHub/E-Core Hyperdrive/ECoreHyperdrive/obj/Debug/net10.0/compressed/gqb36a93wx-{0}-zr4b1gdhaw-zr4b1gdhaw.gz
-/Users/henry/Documents/GitHub/E-Core Hyperdrive/ECoreHyperdrive/obj/Debug/net10.0/compressed/gbhhbr80py-{0}-cj9vnaeud4-cj9vnaeud4.gz
-/Users/henry/Documents/GitHub/E-Core Hyperdrive/ECoreHyperdrive/obj/Debug/net10.0/compressed/s67791d6nl-{0}-cj9vnaeud4-cj9vnaeud4.gz
 /Users/henry/Documents/GitHub/E-Core Hyperdrive/ECoreHyperdrive/obj/Debug/net10.0/staticwebassets.build.json
 /Users/henry/Documents/GitHub/E-Core Hyperdrive/ECoreHyperdrive/obj/Debug/net10.0/staticwebassets.build.json.cache
 /Users/henry/Documents/GitHub/E-Core Hyperdrive/ECoreHyperdrive/obj/Debug/net10.0/staticwebassets.development.json
@@ -227,3 +225,7 @@
 /Users/henry/Documents/GitHub/E-Core Hyperdrive/ECoreHyperdrive/obj/Debug/net10.0/ECoreHyperdrive.pdb
 /Users/henry/Documents/GitHub/E-Core Hyperdrive/ECoreHyperdrive/obj/Debug/net10.0/ECoreHyperdrive.genruntimeconfig.cache
 /Users/henry/Documents/GitHub/E-Core Hyperdrive/ECoreHyperdrive/obj/Debug/net10.0/ref/ECoreHyperdrive.dll
+/Users/henry/Documents/GitHub/E-Core Hyperdrive/ECoreHyperdrive/obj/Debug/net10.0/ECoreHyperdrive.sourcelink.json
+/Users/henry/Documents/GitHub/E-Core Hyperdrive/ECoreHyperdrive/obj/Debug/net10.0/scopedcss/Components/Pages/Home.razor.rz.scp.css
+/Users/henry/Documents/GitHub/E-Core Hyperdrive/ECoreHyperdrive/obj/Debug/net10.0/compressed/gbhhbr80py-{0}-9rt7ni4vmv-9rt7ni4vmv.gz
+/Users/henry/Documents/GitHub/E-Core Hyperdrive/ECoreHyperdrive/obj/Debug/net10.0/compressed/s67791d6nl-{0}-9rt7ni4vmv-9rt7ni4vmv.gz

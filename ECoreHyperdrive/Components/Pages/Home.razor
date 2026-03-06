@@ -1,7 +1,25 @@
 ﻿@page "/"
+@using ECoreHyperdrive.Models
+@using ECoreHyperdrive.Services
+@inject CarService CarSrv
 
-<PageTitle>Home</PageTitle>
+<PageTitle>E-CORE HYPERDRIVE | Showroom</PageTitle>
 
-<h1>Hello, world!</h1>
+<div class="showroom-container">
+    <h1 class="brand-title">E-CORE HYPERDRIVE</h1>
+    <p class="motto">"Dove il silenzio incontra lo 0-100 senza precedenti."</p>
+    <div class="divider"></div>
+</div>
 
-Welcome to your new app.
+<div class="inventory-grid">
+    @foreach (var car in CarSrv.GetInventory())
+    {
+        <div class="car-card">
+            <img src="@car.ImageUrl" alt="@car.Model" />
+            <h3>@car.Model</h3>
+            <p class="stats">0-100: <strong>@car.ZeroToHundred s</strong> | Range: <strong>@car.RangeKm km</strong></p>
+            <p class="price">@car.Price.ToString("N0") €</p>
+            <button class="btn-buy">Dettagli</button>
+        </div>
+    }
+</div>

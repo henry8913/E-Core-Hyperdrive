@@ -1,0 +1,68 @@
+.showroom-container {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(145deg, #0f0f0f, #1a1a1a);
+    color: white;
+    border-radius: 20px;
+    border: 1px solid #333;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    margin-top: 2rem;
+}
+
+.brand-title {
+    font-weight: 800;
+    letter-spacing: 5px;
+    color: #00ff95; /* Verde elettrico */
+    text-transform: uppercase;
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.motto {
+    font-style: italic;
+    font-size: 1.4rem;
+    color: #aaa;
+    margin-bottom: 30px;
+}
+
+.divider {
+    border: 0;
+    height: 2px;
+    background: linear-gradient(to right, transparent, #00ff95, transparent);
+    margin: 20px auto;
+    width: 80%;
+}
+
+.inventory-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 20px;
+    margin-top: 40px;
+    padding: 20px;
+}
+
+.car-card {
+    background: #1a1a1a;
+    border-radius: 15px;
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #333;
+    transition: transform 0.3s;
+}
+
+.car-card:hover {
+    transform: translateY(-10px);
+    border-color: #00ff95;
+}
+
+.car-card img {
+    width: 100%;
+    border-radius: 10px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.stats { color: #aaa; font-size: 0.9rem; margin-top: 10px; }
+.price { color: #00ff95; font-weight: bold; font-size: 1.2rem; }
+.btn-buy { background: #00ff95; color: black; border: none; padding: 10px 20px; border-radius: 5px; font-weight: bold; cursor: pointer; margin-top: 10px; }

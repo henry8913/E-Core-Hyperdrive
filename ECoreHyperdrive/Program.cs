@@ -1,5 +1,6 @@
 using ECoreHyperdrive.Client.Pages;
 using ECoreHyperdrive.Components;
+using ECoreHyperdrive.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -7,6 +8,10 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents()
     .AddInteractiveWebAssemblyComponents();
+
+// --- QUESTA È LA RIGA MAGICA ---
+builder.Services.AddScoped<CarService>(); 
+// -------------------------------
 
 var app = builder.Build();
 
