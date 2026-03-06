@@ -1,0 +1,50 @@
+# Visual Studio and .NET artifacts
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Build results
+[Bb]in/
+[Oo]bj/
+
+# NuGet packages
+*.nupkg
+# The packages folder can be ignored because of Package Restore
+**/packages/*
+#!**/packages/build/**/*.targets
+
+# Local History for Visual Studio
+.vscode/
+*.log
+
+# Backup & report files
+debug.log
+ipch/
+*.pdb
+*.cache
+
+# Rider
+.idea/
+
+# ASP.NET build output and local settings
+# NOTE: keep actual appsettings files in source control so collaborators
+#   have the configuration used by the project. Remove these entries if
+#   you want to ignore environment-specific overrides.
+
+# Blazor
+wwwroot/lib/  # optional: libraries restored by package managers
+
+# Misc
+*.db
+
+# Node modules if any
+node_modules/
+
+# JetBrains Rider
+.idea/
+
+# OS generated files
+.DS_Store
+Thumbs.db
