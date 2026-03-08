@@ -73,8 +73,12 @@ main[b-r39cuvv0us] {
     .sidebar[b-r39cuvv0us] {
         width: 100%;
         height: auto;
-        position: relative;
+        position: relative; /* It collapses because child is fixed, effectively acting as a placeholder or invisible wrapper */
         border-right: none;
-        border-bottom: 1px solid #1a1a1a;
+        border-bottom: none;
+    }
+
+    .content[b-r39cuvv0us] {
+        padding-top: 80px; /* Compensate for fixed NavMenu */
     }
 }

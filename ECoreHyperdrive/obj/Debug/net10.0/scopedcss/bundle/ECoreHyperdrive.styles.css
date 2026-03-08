@@ -74,9 +74,13 @@ main[b-r39cuvv0us] {
     .sidebar[b-r39cuvv0us] {
         width: 100%;
         height: auto;
-        position: relative;
+        position: relative; /* It collapses because child is fixed, effectively acting as a placeholder or invisible wrapper */
         border-right: none;
-        border-bottom: 1px solid #1a1a1a;
+        border-bottom: none;
+    }
+
+    .content[b-r39cuvv0us] {
+        padding-top: 80px; /* Compensate for fixed NavMenu */
     }
 }
 /* /Components/Layout/NavMenu.razor.rz.scp.css */
@@ -245,30 +249,36 @@ main[b-r39cuvv0us] {
         color: white;
         padding: 0.5rem;
         cursor: pointer;
-        width: 40px;
-        height: 40px;
+        width: 44px; /* Slightly larger touch target */
+        height: 44px;
         appearance: none;
         background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
         background-repeat: no-repeat;
         background-position: center;
+        border-radius: 4px;
     }
 
     .nav-scrollable[b-s3okpjng84] {
-        display: none;
+        display: block; /* Always block for animation, we toggle max-height/opacity */
         position: absolute;
         top: 100%;
         left: 0;
         width: 100%;
         background: #050505;
-        height: calc(100vh - 60px);
-        padding: 2rem;
+        height: auto;
+        max-height: 0;
+        overflow: hidden;
+        padding: 0 2rem;
+        opacity: 0;
+        transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        border-bottom: 1px solid #1a1a1a;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.8);
     }
 
-    /* Show menu when toggler is checked (requires JS or peer selector trick, using standard Blazor approach usually involves @onclick but for CSS only we can use checkbox hack if structured right, but here we rely on standard structure) */
-    /* Since we don't have JS interop easily here without InteractiveServer, we'll assume the standard template behavior or simple CSS hover/focus for now or just rely on the fact that I'm building a desktop-first experience as requested */
-    
     .navbar-toggler:checked + .nav-scrollable[b-s3okpjng84] {
-        display: block;
+        max-height: 80vh; /* Allow enough height */
+        opacity: 1;
+        padding: 2rem;
     }
 }
 /* /Components/Layout/ReconnectModal.razor.rz.scp.css */
@@ -827,6 +837,55 @@ main[b-r39cuvv0us] {
     .section-title[b-45m2vkrorp] { font-size: 2rem; }
     .cta-content h2[b-45m2vkrorp] { font-size: 2rem; }
 }
+
+/* Mobile Optimization */
+@media (max-width: 768px) {
+    .glitch-text[b-45m2vkrorp] {
+        font-size: 3rem;
+        letter-spacing: 5px;
+    }
+
+    .hero-subtitle[b-45m2vkrorp] {
+        font-size: 1rem;
+    }
+
+    .section-title[b-45m2vkrorp] {
+        font-size: 2rem;
+    }
+
+    .row[b-45m2vkrorp] {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .tech-grid[b-45m2vkrorp] {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .team-grid[b-45m2vkrorp] {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .container[b-45m2vkrorp] {
+        padding: 0 20px;
+    }
+    
+    .cta-content h2[b-45m2vkrorp] {
+        font-size: 2rem;
+    }
+    
+    .cta-content p[b-45m2vkrorp] {
+        font-size: 1rem;
+    }
+    
+    .btn-cta[b-45m2vkrorp] {
+        padding: 15px 30px;
+        width: 100%;
+    }
+}
+EOF[b-45m2vkrorp]~
 /* /Components/Pages/Admin.razor.rz.scp.css */
 .admin-container[b-0ghg88gp68] {
     max-width: 1200px;
@@ -1003,9 +1062,44 @@ label[b-0ghg88gp68] {
     border-color: rgba(0, 255, 149, 0.3);
 }
 
-.alert-danger[b-0ghg88gp68] {
-    color: #ff4d4d;
-    border-color: rgba(255, 77, 77, 0.3);
+/* Mobile Optimization */
+@media (max-width: 768px) {
+    .admin-container[b-0ghg88gp68] {
+        padding: 80px 15px 30px;
+    }
+
+    .form-card[b-0ghg88gp68] {
+        padding: 20px;
+    }
+
+    .form-group .row[b-0ghg88gp68] {
+        flex-direction: column;
+    }
+
+    .form-group .row .col[b-0ghg88gp68] {
+        margin-bottom: 15px;
+        padding: 0;
+    }
+
+    .admin-table[b-0ghg88gp68] {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    .admin-table th[b-0ghg88gp68], .admin-table td[b-0ghg88gp68] {
+        padding: 10px;
+    }
+
+    .btn-save[b-0ghg88gp68], .btn-cancel[b-0ghg88gp68] {
+        width: 100%;
+        margin-bottom: 10px;
+        display: block;
+    }
+    
+    .btn-cancel[b-0ghg88gp68] {
+        margin-left: 0 !important; /* Override ms-2 */
+    }
 }
 /* /Components/Pages/Home.razor.rz.scp.css */
 /* Hero Section */
@@ -1206,6 +1300,49 @@ label[b-0ghg88gp68] {
     position: relative;
     height: 250px;
     overflow: hidden;
+}
+
+/* Mobile Optimization */
+@media (max-width: 768px) {
+    .hero-title[b-mhfiylbxcp] {
+        font-size: 3rem;
+        letter-spacing: 5px;
+    }
+
+    .hero-subtitle[b-mhfiylbxcp] {
+        font-size: 1rem;
+        padding: 0 20px;
+    }
+
+    .tech-section[b-mhfiylbxcp] {
+        padding: 40px 20px;
+    }
+
+    .tech-content h2[b-mhfiylbxcp] {
+        font-size: 2rem;
+    }
+
+    .tech-content p[b-mhfiylbxcp] {
+        font-size: 1rem;
+    }
+
+    .tech-stats[b-mhfiylbxcp] {
+        gap: 30px;
+    }
+
+    .stat .val[b-mhfiylbxcp] {
+        font-size: 2.5rem;
+    }
+
+    .inventory-grid[b-mhfiylbxcp] {
+        grid-template-columns: 1fr;
+        padding: 0 10px;
+        gap: 30px;
+    }
+
+    .showroom-section[b-mhfiylbxcp] {
+        padding: 60px 20px;
+    }
 }
 
 .card-image-wrapper img[b-mhfiylbxcp] {

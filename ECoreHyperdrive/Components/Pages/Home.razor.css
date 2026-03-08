@@ -198,6 +198,49 @@
     overflow: hidden;
 }
 
+/* Mobile Optimization */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 3rem;
+        letter-spacing: 5px;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+        padding: 0 20px;
+    }
+
+    .tech-section {
+        padding: 40px 20px;
+    }
+
+    .tech-content h2 {
+        font-size: 2rem;
+    }
+
+    .tech-content p {
+        font-size: 1rem;
+    }
+
+    .tech-stats {
+        gap: 30px;
+    }
+
+    .stat .val {
+        font-size: 2.5rem;
+    }
+
+    .inventory-grid {
+        grid-template-columns: 1fr;
+        padding: 0 10px;
+        gap: 30px;
+    }
+
+    .showroom-section {
+        padding: 60px 20px;
+    }
+}
+
 .card-image-wrapper img {
     width: 100%;
     height: 100%;

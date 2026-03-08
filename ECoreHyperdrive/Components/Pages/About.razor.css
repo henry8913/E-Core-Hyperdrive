@@ -395,3 +395,52 @@
     .section-title { font-size: 2rem; }
     .cta-content h2 { font-size: 2rem; }
 }
+
+/* Mobile Optimization */
+@media (max-width: 768px) {
+    .glitch-text {
+        font-size: 3rem;
+        letter-spacing: 5px;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .row {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .tech-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .team-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .container {
+        padding: 0 20px;
+    }
+    
+    .cta-content h2 {
+        font-size: 2rem;
+    }
+    
+    .cta-content p {
+        font-size: 1rem;
+    }
+    
+    .btn-cta {
+        padding: 15px 30px;
+        width: 100%;
+    }
+}
+EOF~

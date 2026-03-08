@@ -173,7 +173,42 @@ label {
     border-color: rgba(0, 255, 149, 0.3);
 }
 
-.alert-danger {
-    color: #ff4d4d;
-    border-color: rgba(255, 77, 77, 0.3);
+/* Mobile Optimization */
+@media (max-width: 768px) {
+    .admin-container {
+        padding: 80px 15px 30px;
+    }
+
+    .form-card {
+        padding: 20px;
+    }
+
+    .form-group .row {
+        flex-direction: column;
+    }
+
+    .form-group .row .col {
+        margin-bottom: 15px;
+        padding: 0;
+    }
+
+    .admin-table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    .admin-table th, .admin-table td {
+        padding: 10px;
+    }
+
+    .btn-save, .btn-cancel {
+        width: 100%;
+        margin-bottom: 10px;
+        display: block;
+    }
+    
+    .btn-cancel {
+        margin-left: 0 !important; /* Override ms-2 */
+    }
 }
